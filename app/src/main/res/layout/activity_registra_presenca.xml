@@ -1,0 +1,80 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\nFormulário para Presença\n"
+            android:textStyle="bold"
+            android:textSize="24dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Palestra"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/presenca_palestra" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data / Horário (Escreva / e :)"
+            android:textSize="20dp"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">>
+
+
+
+        <EditText
+            android:id="@+id/presenca_data"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:hint="Data"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/presenca_hora"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:hint="Horário"
+            android:inputType="time" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Token"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/presenca_token" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar Presença"
+            android:id="@+id/presenca_salvar"/>
+
+    </LinearLayout>
+</ScrollView>
